@@ -1,0 +1,291 @@
+* {
+  box-sizing: border-box; }
+
+html {
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  margin: 0;
+  font-size: 62.5%; }
+  @media screen and (max-width: 768px) {
+    html {
+      font-size: 50%; } }
+
+/*
+Normalize fonts across browsers and make better animations with text.
+Set base font size to 100% for user agency. This enables the em and rem
+font strategy for the rest of the web page. Set line height to 1 for
+browser synchronization
+*/
+body {
+  font-size: 1rem;
+  margin: 0;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden; }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+figure,
+ol,
+ul {
+  margin: 0;
+  padding: 0;
+  font-size: inherit; }
+
+main,
+li {
+  display: block; }
+
+strong {
+  font-weight: bold; }
+
+a,
+button {
+  color: inherit; }
+
+a {
+  text-decoration: none; }
+
+button {
+  overflow: visible;
+  border: 0;
+  font: inherit;
+  -webkit-font-smoothing: inherit;
+  letter-spacing: inherit;
+  background: none;
+  cursor: pointer; }
+
+::-moz-focus-inner {
+  padding: 0;
+  border: 0; }
+
+img {
+  max-width: 100%;
+  height: auto;
+  border: 0; }
+
+body {
+  font-family: 'Open Sans', sans-serif; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Open Sans', sans-serif;
+  color: #73b8a6;
+  font-size: 1.8em; }
+
+p {
+  font-size: 16px; }
+
+#main-heading {
+  font-size: 5em;
+  font-weight: 800; }
+
+.theme-button {
+  display: inline-block;
+  padding: 1rem 2rem;
+  font-weight: bold;
+  border: 2px solid #73b8a6;
+  background-color: #fff;
+  color: #73b8a6;
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  transition: all ease .3s; }
+  .theme-button:hover {
+    background-color: #73b8a6;
+    color: #fff;
+    text-decoration: none; }
+
+#site-header {
+  background-color: #73b8a6; }
+
+#site-header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2em; }
+
+#logo {
+  width: 100%;
+  max-width: 300px; }
+
+#main-menu {
+  display: flex;
+  font-size: 1.6em;
+  color: #fff; }
+  #main-menu li {
+    margin-left: 2rem; }
+    #main-menu li a {
+      transition: all ease .3s; }
+      #main-menu li a:hover {
+        color: #333;
+        text-decoration: none; }
+
+#slider {
+  width: 100%;
+  height: 90vh;
+  max-height: 600px; }
+  #slider .owl-stage-outer {
+    height: 100%; }
+  #slider .owl-stage {
+    height: 100%; }
+  #slider .owl-item {
+    width: 100%;
+    height: 100%; }
+  #slider .owl-nav {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    transform: translateY(-50%); }
+    #slider .owl-nav .owl-prev {
+      float: left; }
+      #slider .owl-nav .owl-prev:before {
+        font-family: 'FontAwesome';
+        content: '\2039';
+        margin-left: 15px;
+        font-weight: bolder;
+        font-size: 7em;
+        color: #fff; }
+    #slider .owl-nav .owl-next {
+      float: right; }
+      #slider .owl-nav .owl-next:before {
+        font-family: 'FontAwesome';
+        content: '\203a';
+        margin-right: 15px;
+        font-weight: bolder;
+        font-size: 7em;
+        color: #fff; }
+
+.slider-item {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center center; }
+
+.page-section.color {
+  background-color: #73b8a6; }
+  .page-section.color .section-heading {
+    color: #fff; }
+  .page-section.color p {
+    color: #fff; }
+
+.page-section-container {
+  padding: 6rem 3rem; }
+  .page-section-container.no-padding-top {
+    padding-top: 0; }
+
+.page-section-content.max-width-content {
+  max-width: 600px;
+  margin: 0 auto; }
+.page-section-content > *:not(:last-child) {
+  margin-bottom: 3rem; }
+
+.section-heading {
+  font-size: 4em;
+  font-weight: 800;
+  text-transform: uppercase; }
+
+#countdown-wrap {
+  width: 100%;
+  padding-top: 0;
+  font-family: arial;
+  max-width: 650px;
+  margin-bottom: 5em; }
+
+#goal {
+  font-size: 48px;
+  text-align: right;
+  color: #FFF; }
+  @media only screen and (max-width: 640px) {
+    #goal {
+      text-align: center; } }
+
+#glass {
+  width: 100%;
+  height: 20px;
+  background: #c7c7c7;
+  border-radius: 10px;
+  float: left;
+  overflow: hidden; }
+
+#progress {
+  float: left;
+  width: 1%;
+  height: 20px;
+  background: #FF5D50;
+  z-index: 333; }
+
+.goal-stat {
+  width: 25%;
+  padding: 10px;
+  float: left;
+  margin: 0;
+  font-size: 1.5em;
+  color: #FFF; }
+  @media only screen and (max-width: 640px) {
+    .goal-stat {
+      width: 50%;
+      text-align: center; } }
+
+.goal-number, .goal-label {
+  display: block; }
+
+.goal-number {
+  font-weight: bold; }
+
+.icons-wrapper {
+  display: flex;
+  align-items: center; }
+
+.icon-content {
+  padding: 2em; }
+  .icon-content > *:not(:last-child) {
+    margin-bottom: 15px; }
+  .icon-content .fa {
+    font-size: 3em; }
+  .icon-content h3 {
+    font-size: 2em;
+    font-weight: bold; }
+  .icon-content.main {
+    flex-basis: 33.3%; }
+
+.wpcf7-form {
+  width: 100%; }
+  .wpcf7-form p {
+    margin-bottom: 1rem; }
+  .wpcf7-form label {
+    width: 100%; }
+  .wpcf7-form .wpcf7-form-control-wrap {
+    width: 100%; }
+  .wpcf7-form input, .wpcf7-form textarea {
+    width: 100%;
+    background-color: #73b8a6;
+    border: 2px solid #fff;
+    padding: 1rem;
+    transition: all ease .3s; }
+    .wpcf7-form input:focus, .wpcf7-form textarea:focus {
+      background-color: #fff;
+      color: #333; }
+  .wpcf7-form input[type="submit"] {
+    display: inline-block;
+    width: auto;
+    padding: 1rem 2rem;
+    font-weight: bold;
+    transition: all ease .3s;
+    text-transform: uppercase; }
+    .wpcf7-form input[type="submit"]:hover {
+      background-color: #fff;
+      color: #73b8a6; }
+
+.contact-info span {
+  display: block;
+  font-size: 16px; }
+  .contact-info span a {
+    color: #73b8a6; }
+
+/*# sourceMappingURL=style.css.map */

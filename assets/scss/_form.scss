@@ -1,0 +1,42 @@
+.wpcf7-form {
+    width: 100%;
+
+    p {
+        margin-bottom: 1rem;
+    }
+
+    label {
+        width: 100%;
+    }
+
+    .wpcf7-form-control-wrap {
+        width: 100%;
+    }
+
+    input, textarea {
+        width: 100%;
+        background-color: $color-primary;
+        border: 2px solid #fff;
+        padding: 1rem;
+        transition: all ease .3s;
+
+        &:focus {
+            background-color: #fff;
+            color: #333;
+        }
+    }
+
+    input[type="submit"] {
+        display: inline-block;
+        width: auto;
+        padding: 1rem 2rem;
+        font-weight: bold;
+        transition: all ease .3s;
+        text-transform: uppercase;
+
+        &:hover {
+            background-color: #fff;
+            color: $color-primary;
+        }
+    }
+}
