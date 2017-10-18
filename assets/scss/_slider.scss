@@ -52,7 +52,36 @@
 
 .slider-item {
     width: 100%;
+    position: relative;
     height: 100%;
     background-size: cover;
     background-position: center center;
+}
+
+.slider-content {
+    position: absolute;
+    bottom: 18rem;
+    left: 15rem;
+    text-shadow: 2px 4px 3px #1d1d1d;
+    opacity:0;
+    transition: all ease 1s;
+
+    &.show {
+        bottom: 20em;
+        opacity: 1;
+    }
+}
+
+.slider-title {
+    font-size: 5em;
+    font-weight: bold;
+    text-transform: uppercase;
+
+    &:not(:last-child) {
+        margin-bottom: .8rem;
+    }
+}
+
+.slider-sub-title {
+    font-size: 3em;
 }

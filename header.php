@@ -22,14 +22,15 @@
     <header id="site-header">
         <div id="site-header-container">
             <div id="logo-container">
-                <img id="logo" src="wp-content/themes/buildinghope/assets/img/CCC_long_logo.png">
+                <img id="logo" src="wp-content/themes/buildinghope/assets/img/CanyonCreekLogo_White.png">
             </div>
 
             <nav id="site-nav">
                 <div id="nav-container">
                     <ul id="main-menu">
                         <li><a href="#our-mission">Our Mission</a></li>
-                        <li><a href="#are-you-in">Gift</a></li>
+                        <li><a href="#1-time-gift">1-Time Gift</a></li>
+                        <li><a href="#6-month-pledge">6-Month Pledge</a></li>
                         <li><a href="#contact">Contact</a></li>
                     </ul>
                 </div>

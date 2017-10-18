@@ -2,9 +2,22 @@
 
 <div id="slider" class="owl-carousel">
     <div class="slider-item" style="background-image:url('http://buildinghope.wpengine.com/wp-content/uploads/2017/10/building_front.jpg')">
+        <div class="slider-content">
+            <h3 class="slider-title">Our Dream Building</h3>
+            <h4 class="slider-sub-title">2201 Wetmore, Everett WA</h4>
+        </div>
     </div>
 
     <div class="slider-item" style="background-image:url('http://buildinghope.wpengine.com/wp-content/uploads/2017/10/building_back.jpg')">
+        <div class="slider-content">
+            <h3 class="slider-title">A place to reach our community</h3>
+        </div>
+    </div>
+
+    <div class="slider-item" style="background-image:url('http://buildinghope.wpengine.com/wp-content/uploads/2017/10/IMG_0496-1.jpg')">
+        <div class="slider-content">
+            <h3 class="slider-title">Are you in?</h3>
+        </div>
     </div>
 </div>
 
@@ -46,11 +59,11 @@
     </div>
   </div>
   <div class="goal-stat">
-    <span class="goal-number">1%</span>
+    <span class="goal-number red">1%</span>
     <span class="goal-label">Funded</span>
   </div>
   <div class="goal-stat">
-    <span class="goal-number">$1,000</span>
+    <span class="goal-number red">$1,000</span>
     <span class="goal-label">Raised</span>
   </div>
   <div class="goal-stat">
@@ -68,21 +81,8 @@
         </div>
     </section>
 
-    <section class="page-section" id="are-you-in">
+    <section class="page-section" id="1-time-gift">
         <div class="page-section-container">
-            <div class="page-section-content text-center max-width-content">
-                <h2 class="section-heading">Are you in?</h1>
-
-                <p>
-                    Join us in our dream of bringing hope and the message of Jesus to the people of Everett! If you'd like to partner
-                    with us, there are a couple of ways you can give:
-                </p>
-            </div>
-        </div>
-    </section>
-
-    <section class="page-section" id="one-time-gift">
-        <div class="page-section-container no-padding-top">
             <div class="page-section-content text-center">
                 <h2 class="section-heading">1-Time Gift</h1>
 
@@ -90,7 +90,7 @@
                     <div class="icon-content main">
                         <i class="fa fa-hand-pointer-o" aria-hidden="true"></i>
 
-                        <h3>Click the link</h3>
+                        <h3>Click the give now button</h3>
 
                         <p>
                             Click our give link below to go to our secure giving page
@@ -139,7 +139,7 @@
                 <h2 class="section-heading">6-Month Pledge</h1>
 
                 <p>
-                    If you are interested in pledging to this cause, please fill out the form below. We are so grateful to you and your pledge!
+                    If you are interested in pledging to this cause each month for the next 6 months, please fill out the form below. We are so grateful to you for your pledge!
                 </p>
 
                 <?php echo do_shortcode( '[contact-form-7 id="6" title="Contact form 1"]' ); ?>
@@ -150,19 +150,24 @@
     <section class="page-section" id="contact">
         <div class="page-section-container">
             <div class="page-section-content text-center max-width-content">
-                <h2 class="section-heading">Will you join us?</h1>
+                <h2 class="section-heading">Are you in?</h1>
 
                 <p>
-                    We thank you for your interest and hope you our cause. If you have any questions, please call or email us
-                    using the information below. We hope to hear from you and hope you help bring hope to the people of Everett!
+                    Join us in our dream of bringing hope and the message of Jesus to the people of Everett! If you have any questions, please call or email us
+                    using the information below. We hope to hear from you soon!
+                </p>
+
+                <p>
+                    If you want to mail a check make it out to Canyon Creek Church and put Everett
+                    Building in the memo line. Our office address is 15117 Main St Suite B205, Mill Creek, Wa 98012
                 </p>
 
                 <div class="contact-info">
-                    <span>Email: <a href="mailto:danhamannmedia@gmail.com">danhamannmedia@gmail.com</a></span>
+                    <span>Email: <a href="mailto:dan.h@canyoncreekonline.com">dan.h@canyoncreekonline.com</a></span>
                     <span>Cell: <a href="tel:2064061934">206-406-1934</a></span>
                 </div>
 
-                <a class="theme-button" href="#are-you-in">Give Now</a>
+                <a class="theme-button" href="#1-time-gift">Give Now</a>
             </div>
         </div>
     </section>

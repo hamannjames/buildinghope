@@ -1,10 +1,31 @@
 $(document).ready(function(){
-    $('#slider').owlCarousel({
+    var slider = $('#slider');
+
+    slider.owlCarousel({
         items: 1,
         nav: true,
         navText: ['', ''],
-        loop: true
+        loop: true,
+        autoplay: true,
+        autoplayTimeout: 3500,
+        autoplayHoverPause: true,
+        onInitialized: function() {
+          $('.slider-content').eq(2).addClass('show');
+        }
     });
+
+    var sliderContent = $('.slider-content');
+
+    slider.on('changed.owl.carousel', function(e){
+      sliderContent.each(function(){
+        $(this).removeClass('show');
+      });
+
+      var slide = $('.owl-item').eq(e.item.index);
+
+      slide.find('.slider-content').addClass('show');
+    });
+
 
     // Select all links with hashes
 $('a[href*="#"]')

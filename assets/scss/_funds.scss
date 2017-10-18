@@ -51,6 +51,9 @@
 }
 
 .goal-number, .goal-label {
+  &.red {
+    color: #FF5D50;
+  }
   display: block;
 }
 

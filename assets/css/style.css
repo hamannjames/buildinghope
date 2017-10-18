@@ -80,7 +80,7 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 1.8em; }
 
 p {
-  font-size: 16px; }
+  font-size: 18px; }
 
 #main-heading {
   font-size: 5em;
@@ -90,10 +90,10 @@ p {
   display: inline-block;
   padding: 1rem 2rem;
   font-weight: bold;
-  border: 2px solid #73b8a6;
+  border: 3px solid #73b8a6;
   background-color: #fff;
   color: #73b8a6;
-  font-size: 1.8rem;
+  font-size: 2rem;
   text-transform: uppercase;
   transition: all ease .3s; }
   .theme-button:hover {
@@ -116,8 +116,9 @@ p {
 
 #main-menu {
   display: flex;
-  font-size: 1.6em;
-  color: #fff; }
+  font-size: 1.8em;
+  color: #fff;
+  font-weight: 600; }
   #main-menu li {
     margin-left: 2rem; }
     #main-menu li a {
@@ -163,9 +164,31 @@ p {
 
 .slider-item {
   width: 100%;
+  position: relative;
   height: 100%;
   background-size: cover;
   background-position: center center; }
+
+.slider-content {
+  position: absolute;
+  bottom: 18rem;
+  left: 15rem;
+  text-shadow: 2px 4px 3px #1d1d1d;
+  opacity: 0;
+  transition: all ease 1s; }
+  .slider-content.show {
+    bottom: 20em;
+    opacity: 1; }
+
+.slider-title {
+  font-size: 5em;
+  font-weight: bold;
+  text-transform: uppercase; }
+  .slider-title:not(:last-child) {
+    margin-bottom: .8rem; }
+
+.slider-sub-title {
+  font-size: 3em; }
 
 .page-section.color {
   background-color: #73b8a6; }
@@ -179,11 +202,13 @@ p {
   .page-section-container.no-padding-top {
     padding-top: 0; }
 
-.page-section-content.max-width-content {
-  max-width: 600px;
+.page-section-content {
+  max-width: 1200px;
   margin: 0 auto; }
-.page-section-content > *:not(:last-child) {
-  margin-bottom: 3rem; }
+  .page-section-content.max-width-content {
+    max-width: 700px; }
+  .page-section-content > *:not(:last-child) {
+    margin-bottom: 3rem; }
 
 .section-heading {
   font-size: 4em;
@@ -234,6 +259,8 @@ p {
 
 .goal-number, .goal-label {
   display: block; }
+  .goal-number.red, .goal-label.red {
+    color: #FF5D50; }
 
 .goal-number {
   font-weight: bold; }
@@ -274,6 +301,7 @@ p {
   .wpcf7-form input[type="submit"] {
     display: inline-block;
     width: auto;
+    font-size: 2rem;
     padding: 1rem 2rem;
     font-weight: bold;
     transition: all ease .3s;
