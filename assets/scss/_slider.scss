@@ -1,6 +1,6 @@
 #slider {
     width: 100%;
-    height: 90vh;
+    height: 80vh;
     max-height: 600px;
 
     .owl-stage-outer {
@@ -21,9 +21,11 @@
         width: 100%;
         top:50%;
         transform: translateY(-50%);
+        pointer-events: none;
 
         .owl-prev {
             float: left;
+            pointer-events: auto;
 
             &:before {
                 font-family: 'FontAwesome';
@@ -37,6 +39,7 @@
 
         .owl-next {
             float: right;
+            pointer-events: auto;
 
             &:before {
                 font-family: 'FontAwesome';
@@ -60,15 +63,45 @@
 
 .slider-content {
     position: absolute;
-    bottom: 18rem;
-    left: 15rem;
+    bottom: 20%;
+    left: 10%;
     text-shadow: 2px 4px 3px #1d1d1d;
     opacity:0;
     transition: all ease 1s;
 
     &.show {
-        bottom: 20em;
+        bottom: 30%;
         opacity: 1;
+    }
+
+    &.center {
+        left: 50%;
+        top: 60%;
+        transform: translate(-50%, -50%);
+
+        &.show {
+            top: 50%;
+        }
+    }
+
+    @media screen and (max-width: 480px) {
+        left: 50%;
+        top: 30%;
+        transform: translateX(-50%);
+
+        &.show {
+            top:20%;
+        }
+
+        &.center {
+            left: 50%;
+            top: 60%;
+            transform: translate(-50%, -50%);
+
+            &.show {
+                top: 50%;
+            }
+        }
     }
 }
 
@@ -79,6 +112,10 @@
 
     &:not(:last-child) {
         margin-bottom: .8rem;
+    }
+
+    @media screen and (max-width: 768px) {
+        font-size: 4rem;
     }
 }
 

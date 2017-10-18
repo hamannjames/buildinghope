@@ -5,6 +5,10 @@
   font-family: arial;
   max-width: 650px;
   margin-bottom: 5em;
+
+  @media screen and (max-width: 640px) {
+    margin-bottom: 12rem;
+  }
 }
 
 #goal {

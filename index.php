@@ -15,7 +15,7 @@
     </div>
 
     <div class="slider-item" style="background-image:url('http://buildinghope.wpengine.com/wp-content/uploads/2017/10/IMG_0496-1.jpg')">
-        <div class="slider-content">
+        <div class="slider-content center">
             <h3 class="slider-title">Are you in?</h3>
         </div>
     </div>
@@ -167,7 +167,7 @@
                     <span>Cell: <a href="tel:2064061934">206-406-1934</a></span>
                 </div>
 
-                <a class="theme-button" href="#1-time-gift">Give Now</a>
+                <a class="theme-button" href="#1-time-gift">1-Time Gift</a>
             </div>
         </div>
     </section>

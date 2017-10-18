@@ -1,6 +1,10 @@
 .icons-wrapper {
     display: flex;
     align-items: center;
+
+    @media screen and (max-width: 768px) {
+        flex-direction: column;
+    }
 }
 
 .icon-content {
@@ -23,5 +27,11 @@
 
     &.main {
         flex-basis: 33.3%;
+    }
+
+    &:not(.main) {
+        @media screen and (max-width: 768px) {
+            display: none;
+        }
     }
 }

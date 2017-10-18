@@ -7,6 +7,10 @@
     align-items: center;
     justify-content: space-between;
     padding: 2em;
+
+    @media screen and (max-width: 991px) {
+        flex-direction: column;
+    }
 }
 
 #logo {
@@ -31,5 +35,10 @@
                 text-decoration: none;
             }
         }
+    }
+
+    @media screen and (max-width: 480px) {
+        flex-direction: column;
+        text-align: center;
     }
 }
